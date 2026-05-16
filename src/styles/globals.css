@@ -772,3 +772,62 @@ body {
 
   color: rgba(255,255,255,0.68);
 }
+
+.skills-grid-new {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+
+  gap: 22px;
+
+  width: 100%;
+  max-width: 1100px;
+}
+
+.skill-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 86px;
+
+  padding: 1.2rem 1.5rem;
+
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  color: rgba(255,255,255,0.78);
+
+  font-size: 1.08rem;
+  font-weight: 400;
+
+  text-align: center;
+  line-height: 1.5;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    border 0.35s ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-6px);
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .skills-grid-new {
+    grid-template-columns: 1fr;
+  }
+}
