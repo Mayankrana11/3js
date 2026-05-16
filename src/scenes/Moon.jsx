@@ -19,6 +19,24 @@ export default function Moon() {
       moonRef.current.position.y =
         Math.sin(t * 0.4) * 0.06;
     }
+
+    if (portraitRef.current) {
+      const portraitFloatX =
+        Math.sin(time * 1.1) * 12;
+
+      const portraitFloatY =
+        Math.cos(time * 1.7) * 8;
+
+      portraitRef.current.style.transform = `
+        translate3d(
+          ${currentX * 0.12 + portraitFloatX}px,
+          ${currentY * 0.12 + portraitFloatY}px,
+          0
+        )
+        scale(1.01)
+        rotate(${currentX * 0.002}deg)
+      `;
+    }
   });
 
   return (
