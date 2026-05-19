@@ -33,7 +33,7 @@ export default function Navbar() {
       </button>
 
       <button
-        onClick={() => scrollToSection("projects")}
+        onClick={() => scrollToSection("projects", 120)}
       >
         Projects
       </button>
