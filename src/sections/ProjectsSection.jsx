@@ -1,11 +1,11 @@
 const projects = [
   {
     title: "IC (I See) Anomaly Detector",
-    stack: "AI • Computer Vision • React • Python",
+    stack: "LocalLLM • Computer Vision • Js • Python",
     description:
       "Advanced anomaly detection platform with intelligent monitoring pipelines and immersive visual analytics.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mayankrana11/IC-ANOMALY_DETECTOR.git",
+    live: "https://sentry-vision.netlify.app/",
   },
 
   {
@@ -13,17 +13,17 @@ const projects = [
     stack: "React • Node.js • PostgreSQL",
     description:
       "Full-stack ride hailing ecosystem featuring account management, booking flows and scalable backend services.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mayankrana11/DBMS-project.git",
+    live: "https://ride-management.netlify.app/",
   },
 
   {
     title: "ManasAi - AI Powered Medical Health Assistant",
-    stack: "AI • Ollama • Firebase • React",
+    stack: "Llama Local LLM • Firebase • React",
     description:
       "Conversational healthcare assistant with voice interaction, persistent chat history, and intelligent responses.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mayankrana11/ManasAi.git",
+    live: "https://manas-plus.netlify.app/",
   },
 
   {
@@ -31,8 +31,8 @@ const projects = [
     stack: "React • Express • Node.js",
     description:
       "Modern restaurant ordering ecosystem with immersive UI, checkout flows, and live order management.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mayankrana11/Restaurant-POS-System.git",
+    live: "https://haru-no-yorokobi.netlify.app/",
   },
 
   {
@@ -40,48 +40,48 @@ const projects = [
     stack: "Java • Swing • OOP",
     description:
       "Desktop fleet tracking and management system built with Java GUI architecture and modular components.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/Fleet-Management-System-GUI.git",
   },
 
   {
     title: "University ERP",
-    stack: "React • Node.js • MongoDB",
+    stack: "Java • MySQL • AWT • Swing",
     description:
       "Centralized academic ERP platform handling attendance, records, scheduling, and administration workflows.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/University-ERP.git",
   },
 
   {
     title: "Shinsou Chess",
-    stack: "React • Chess Engine • UI/UX",
+    stack: "C/C++ • React • Chess Engine • UI/UX",
     description:
       "Interactive cinematic chess platform with move highlighting, smooth gameplay, and modern visuals.",
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mayankrana11/shinsou-chess.git",
+    live: "https://shinshou-chess-engine.netlify.app/",
   },
 
   {
     title: "RV32I-Emulation-Suite",
-    stack: "C • RISC-V • Systems",
+    stack: "Python • RISC-V • Systems",
     description:
-      "Custom RV32I instruction emulation environment featuring low-level architecture experimentation.",
-    github: "#",
+      "Custom RV32I instruction emulation environment featuring low-level architecture experimentation of RV Assembler & Simulator",
+    github: "https://github.com/Mayankrana11/RV32I-Emulation-Suite.git",
   },
 
   {
-    title: "SimpleOS - Lightweight OS built over egos2000",
+    title: "SimpleOS - Lightweight OS built over EGOS2000",
     stack: "C • Operating Systems",
     description:
       "Minimal operating system implementation exploring scheduling, memory, and process handling.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleOS.git",
   },
 
   {
     title: "OS - SimpleMultithreader",
-    stack: "C • Concurrency • Threads",
+    stack: "C/C++ • Concurrency • Threads",
     description:
       "Custom multithreading implementation demonstrating synchronization and low-level thread management.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleMultithreader.git",
   },
 
   {
@@ -89,7 +89,7 @@ const projects = [
     stack: "C • ELF Loading • Systems",
     description:
       "Experimental smart loader architecture for efficient executable loading and runtime handling.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleSmartLoader.git",
   },
 
   {
@@ -97,7 +97,7 @@ const projects = [
     stack: "C • CPU Scheduling",
     description:
       "Scheduling subsystem exploring process queues, execution ordering, and runtime optimization.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleScheduler.git",
   },
 
   {
@@ -105,7 +105,7 @@ const projects = [
     stack: "C • Shell • Unix",
     description:
       "Custom Unix-style terminal implementation supporting commands, parsing, and process execution.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleUnixTerminal.git",
   },
 
   {
@@ -113,7 +113,7 @@ const projects = [
     stack: "C • Systems • Runtime",
     description:
       "Lightweight executable loader implementation exploring runtime memory management principles.",
-    github: "#",
+    github: "https://github.com/Mayankrana11/OS-SimpleLoader.git",
   },
 ];
 
