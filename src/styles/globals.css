@@ -1606,3 +1606,242 @@ body {
 }
 
 }
+
+
+/* ========================================= */
+/* MOBILE + TABLET RESPONSIVE FIXES */
+/* ========================================= */
+
+@media screen and (max-width:768px){
+
+/* Navbar */
+
+.navbar{
+  width:95%;
+  left:50%;
+  right:auto;
+
+  transform:translateX(-50%);
+
+  gap:14px;
+
+  padding:12px 18px;
+
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+
+.navbar::-webkit-scrollbar{
+  display:none;
+}
+
+.navbar button{
+  font-size:.82rem;
+  white-space:nowrap;
+}
+
+
+/* Hero */
+
+.hero-content{
+  max-width:90%;
+  min-height:auto;
+
+  text-align:center;
+  align-items:center;
+
+  padding-top:120px;
+}
+
+.hero-title{
+  font-size:clamp(3rem,13vw,4.5rem);
+
+  line-height:1;
+
+  text-align:center;
+
+  letter-spacing:-2px;
+}
+
+.hero-description{
+  font-size:.95rem;
+
+  line-height:1.8;
+
+  max-width:100%;
+}
+
+.hero-buttons{
+  flex-direction:column;
+
+  width:100%;
+}
+
+.hero-buttons button{
+  width:100%;
+}
+
+.hero-portrait{
+  opacity:.18;
+
+  right:-45%;
+
+  bottom:-5%;
+
+  height:70vh;
+}
+
+.scroll-indicator{
+  display:none;
+}
+
+
+/* Skills */
+
+.skills-section{
+  justify-content:center;
+
+  padding:100px 24px;
+}
+
+.skills-content{
+  width:100%;
+
+  margin:0;
+
+  transform:none;
+}
+
+.skills-content h2{
+  font-size:3rem;
+}
+
+.skills-grid-new{
+  grid-template-columns:1fr;
+}
+
+.piano-image{
+  opacity:.15;
+}
+
+
+/* Experience */
+
+.experience-section{
+  padding:100px 24px;
+}
+
+.experience-content{
+  width:100%;
+}
+
+.experience-content h2{
+  font-size:3rem;
+}
+
+.experience-brain{
+  opacity:.08;
+
+  right:-60%;
+}
+
+
+/* Projects */
+
+.projects-header{
+  padding:0 24px;
+}
+
+.projects-header h2{
+  font-size:3rem;
+}
+
+.projects-subtext{
+  font-size:.95rem;
+}
+
+.project-card-modern{
+  width:85vw;
+}
+
+.project-card-modern h3{
+  font-size:1.5rem;
+}
+
+.projects-carousel-track{
+  padding:0 24px;
+}
+
+.project-arrow{
+  display:none;
+}
+
+
+/* Contact */
+
+.contact-section{
+  padding:120px 16px;
+}
+
+.contact-card{
+  width:100%;
+
+  padding:28px;
+}
+
+.contact-card h2{
+  font-size:2.5rem;
+}
+
+.contact-japan-bg{
+  width:200vw;
+
+  opacity:.4;
+}
+
+
+/* Footer socials */
+
+.contact-socials{
+  flex-direction:column;
+}
+
+.social-link{
+  width:100%;
+
+  justify-content:center;
+}
+
+}
+
+
+/* ========================================= */
+/* VERY SMALL PHONES */
+/* ========================================= */
+
+@media screen and (max-width:480px){
+
+.hero-title{
+  font-size:2.5rem;
+}
+
+.hero-subtitle{
+  font-size:.7rem;
+
+  letter-spacing:4px;
+}
+
+.contact-card h2{
+  font-size:2rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:14px;
+}
+
+.project-card-modern{
+  width:90vw;
+}
+
+}
