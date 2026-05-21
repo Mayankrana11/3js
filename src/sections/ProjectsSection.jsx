@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 const projects = [
   {
     title: "IC (I See) Anomaly Detector",
@@ -118,6 +120,68 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
+  const carouselRef = useRef(null);
+
+  const infiniteProjects = [
+    ...projects,
+    ...projects,
+    ...projects
+  ];
+
+  useEffect(() => {
+    const container = carouselRef.current;
+
+    if (!container) return;
+
+    setTimeout(() => {
+      container.scrollLeft =
+        container.scrollWidth / 3;
+    },100);
+
+    const handleScroll = () => {
+      const third =
+        container.scrollWidth / 3;
+
+      if (
+        container.scrollLeft <= third * 0.5
+      ) {
+        container.scrollLeft += third;
+      }
+
+      if (
+        container.scrollLeft >= third * 1.5
+      ) {
+        container.scrollLeft -= third;
+      }
+    };
+
+    container.addEventListener(
+      "scroll",
+      handleScroll
+    );
+
+    return () =>
+      container.removeEventListener(
+        "scroll",
+        handleScroll
+      );
+
+  }, []);
+
+  const scrollLeft = () => {
+    carouselRef.current?.scrollBy({
+      left: -1200,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    carouselRef.current?.scrollBy({
+      left: 1200,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section
       id="projects"
@@ -129,27 +193,41 @@ export default function ProjectsSection() {
         </p>
 
         <h2>
-          Selected <br />
+          Selected
+          <br />
           Work
         </h2>
 
         <p className="projects-subtext">
           Systems, interfaces, and immersive
           digital experiences across AI,
-          full-stack engineering, and systems
-          programming.
+          full-stack engineering,
+          and systems programming.
         </p>
       </div>
 
-      <div className="projects-carousel-wrapper">
-        <div className="projects-carousel-track">
-          {[...projects, ...projects].map(
-            (project, index) => (
+      <div className="projects-carousel-container">
+
+        <button
+          className="project-arrow left"
+          onClick={scrollLeft}
+        >
+          ←
+        </button>
+
+        <div
+          ref={carouselRef}
+          className="projects-carousel-wrapper"
+        >
+          <div className="projects-carousel-track">
+
+            {infiniteProjects.map((project,index)=>(
               <div
                 className="project-card-modern"
                 key={index}
               >
                 <div className="project-card-content">
+
                   <p className="project-stack">
                     {project.stack}
                   </p>
@@ -161,10 +239,10 @@ export default function ProjectsSection() {
                   </p>
 
                   <div className="project-links">
+
                     <a
                       href={project.github}
                       target="_blank"
-                      rel="noopener noreferrer"
                     >
                       GitHub →
                     </a>
@@ -173,18 +251,28 @@ export default function ProjectsSection() {
                       <a
                         href={project.live}
                         target="_blank"
-                        rel="noopener noreferrer"
                         className="live-link"
                       >
                         Live →
                       </a>
                     )}
+
                   </div>
+
                 </div>
               </div>
-            )
-          )}
+            ))}
+
+          </div>
         </div>
+
+        <button
+          className="project-arrow right"
+          onClick={scrollRight}
+        >
+          →
+        </button>
+
       </div>
     </section>
   );

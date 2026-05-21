@@ -1274,3 +1274,127 @@ body {
 .project-links .live-link:hover {
   background: rgba(255,255,255,0.9);
 }
+
+.projects-nav {
+  display: flex;
+  gap: 16px;
+
+  margin-top: 40px;
+}
+
+.project-arrow {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  background: rgba(255,255,255,.04);
+
+  color: white;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition: all .3s ease;
+
+  backdrop-filter: blur(12px);
+}
+
+.project-arrow:hover {
+  transform: translateY(-4px);
+
+  background: rgba(255,255,255,.08);
+}
+
+.projects-carousel-wrapper {
+  overflow: hidden;
+
+  margin-top: 60px;
+}
+
+.projects-carousel-track {
+  display: flex;
+  gap: 30px;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+}
+
+.projects-carousel-track::-webkit-scrollbar{
+  display:none;
+}
+
+.projects-carousel-container{
+  position:relative;
+}
+
+.projects-carousel-wrapper{
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  scrollbar-width:none;
+  scroll-behavior:smooth;
+}
+
+.projects-carousel-wrapper::-webkit-scrollbar{
+  display:none;
+}
+
+.projects-carousel-track{
+  display:flex;
+  gap:30px;
+
+  padding:0 70px;
+}
+
+.project-arrow{
+  position:absolute;
+
+  top:50%;
+  transform:translateY(-50%);
+
+  width:58px;
+  height:58px;
+
+  border-radius:50%;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  background:rgba(255,255,255,.04);
+
+  color:white;
+
+  font-size:1.5rem;
+
+  cursor:pointer;
+
+  z-index:100;
+
+  backdrop-filter:blur(16px);
+
+  transition:.3s ease;
+}
+
+.project-arrow:hover{
+  transform:
+  translateY(-50%)
+  scale(1.08);
+
+  background:rgba(255,255,255,.08);
+}
+
+.project-arrow.left{
+  left:0px;
+}
+
+.project-arrow.right{
+  right:0px;
+}
